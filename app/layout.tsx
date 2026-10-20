@@ -6,7 +6,7 @@ import ScrollProgress from '@/components/ScrollProgress';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'], variable: '--f-inter', display: 'swap' });
-const lit = Literata({ subsets: ['latin'], weight: ['300', '400', '500', '600'], style: ['normal', 'italic'], variable: '--f-lit', display: 'swap' });
+const lit = Literata({ subsets: ['latin'], axes: ['opsz'], style: ['normal', 'italic'], variable: '--f-lit', display: 'swap' });
 const geist = Geist_Mono({ subsets: ['latin'], weight: ['400', '500', '600'], variable: '--f-geist', display: 'swap' });
 
 export const metadata: Metadata = {

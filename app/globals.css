@@ -496,8 +496,8 @@
   }
 
 /* v2 additions */
-.brand img{display:block;height:32px;width:auto;flex:none}
-.sf-brand .brand img{height:34px}
+.brand img{display:block;height:30px;width:auto;flex:none}
+.sf-brand .brand img{height:30px}
 .ico{display:inline-block;width:1em;height:1em;margin-right:6px;vertical-align:-.14em}
 .ico-blink{animation:lcbl 1.4s steps(1) infinite}
 @media (prefers-reduced-motion: reduce){.ico-blink{animation:none}}
@@ -527,9 +527,8 @@ html{scroll-behavior:smooth;scroll-padding-top:84px}
 
 /* header: shrinks slightly once you scroll */
 .top{transition:border-color .3s,padding .3s,box-shadow .3s}
-.top.scrolled{padding-top:10px;padding-bottom:10px;box-shadow:0 12px 24px -22px rgba(30,32,60,.35)}
-.brand img{transition:height .3s}
-.top.scrolled .brand img{height:28px}
+.top.scrolled{box-shadow:0 12px 24px -22px rgba(30,32,60,.35)}
+.brand img{transition:none}
 .menu a:not(.contact-link){position:relative}
 .menu a:not(.contact-link)::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:1.5px;background:var(--frame-color);transform:scaleX(0);transform-origin:left;transition:transform .25s}
 .menu a:not(.contact-link):hover::after,.menu a.is-active::after{transform:scaleX(1)}
@@ -563,19 +562,3 @@ summary:hover{color:var(--frame-color)}
 @keyframes routeIn{from{opacity:0}to{opacity:1}}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}.progress{display:none}}
 
-/* phones: comfortable tap targets and spacing */
-@media (max-width: 760px){
-  .mobile-menu a{min-height:48px;display:flex;align-items:center}
-  .menu-toggle{min-height:44px}
-  summary{min-height:48px}
-  .cv-f input,.cv-f select,.cv-f textarea{font-size:16px;padding:12px 0}
-  .cv-btn{width:100%;justify-content:center;min-height:48px}
-  .site-foot nav a{padding:4px 0}
-  .ov-card:hover,.hw-card.on:hover{transform:none}
-}
-@media (max-width: 600px){
-  .viz{padding:14px}
-  .lc-t b{font-size:15px}
-  .fx{gap:24px}
-  .figcap{font-size:14px}
-}
