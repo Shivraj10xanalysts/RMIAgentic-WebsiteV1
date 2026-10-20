@@ -502,8 +502,7 @@
 .ico-blink{animation:lcbl 1.4s steps(1) infinite}
 @media (prefers-reduced-motion: reduce){.ico-blink{animation:none}}
 .lc-pill{display:inline-flex;align-items:center}
-.lc-kv b{display:inline-flex;align-items:center;justify-content:flex-end}
-.lc-kv.lc-feed b{justify-self:end}
+.lc-kv b{display:inline-flex;align-items:center}
 .contact-view{padding-top:clamp(70px,9vh,96px)}
 .cover-view{padding-top:clamp(70px,9vh,96px);min-height:60vh}
 .contact-view .cv-form{display:block}
@@ -562,3 +561,7 @@ summary:hover{color:var(--frame-color)}
 @keyframes routeIn{from{opacity:0}to{opacity:1}}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}.progress{display:none}}
 
+
+.ov-cards > .reveal{display:flex}
+.ov-cards > .reveal > .ov-card{flex:1}
+.sf-brand .brand{gap:10px}

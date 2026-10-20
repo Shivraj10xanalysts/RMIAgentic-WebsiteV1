@@ -37,7 +37,7 @@ export default function Header() {
 
   return (
     <header className={`top ${scrolled ? 'scrolled' : ''}`}>
-      <Link href="/" aria-label="RMI Agentic, home" style={{ textDecoration: 'none' }} onClick={onLogo}><Logo /></Link>
+      <Link href="/" aria-label="RMI Agentic, home" style={{ textDecoration: 'none', display: 'inline-flex', alignSelf: 'flex-start' }} onClick={onLogo}><Logo /></Link>
       <nav className="menu" aria-label="Main">
         <Link href="/#product" className={section === 'product' ? 'is-active' : ''}><i aria-hidden="true" />Product</Link>
         <Link href="/cover-cost" className={path === '/cover-cost' ? 'is-active' : ''}><i aria-hidden="true" />Cover cost</Link>

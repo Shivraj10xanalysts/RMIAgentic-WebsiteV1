@@ -103,8 +103,8 @@ export default function WhySection() {
                   </g>
                 );
               })}
-              <image href="/rmi-logo-light.svg" x={cx - 62} y={cy - 88} width="19" height="23" />
-              <text x={cx - 38} y={cy - 69} fontSize="16" fontWeight="500" letterSpacing="-0.3" fill="#161A33"><tspan fill="#5B4FE6">RMI</tspan>Agentic</text>
+              <image href="/rmi-logo-light.svg" x={cx - 47} y={cy - 81} width="13" height="16" />
+              <text x={cx - 28} y={cy - 68} fontSize="13" fontWeight="500" letterSpacing="-0.2" fill="#161A33"><tspan fill="#5B4FE6">RMI</tspan>Agentic</text>
               <g filter="url(#fwsh)"><rect x={cx - 74} y={cy - 54} width="148" height="108" rx="16" fill="#0B0E14" /></g>
               <text x={cx} y={cy - 31} textAnchor="middle" fontFamily="var(--mono)" fontSize="10.5" letterSpacing="1.4" fill="#8A90A0">{lap > 4 ? 'CYCLE n' : `CYCLE ${lap}`}</text>
               <text x={cx - 60} y={cy - 2} fontFamily="var(--mono)" fontSize="10" fill="#8A90A0">SCORE</text>
