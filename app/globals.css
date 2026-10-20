@@ -65,7 +65,11 @@
   }
   @keyframes bob{50%{transform:translateY(5px)}}
   .hook{position:absolute;right:clamp(24px,3.6vw,56px);bottom:clamp(24px,3vw,44px);display:inline-flex;align-items:center;gap:10px;font-size:clamp(16px,1.3vw,19px);font-weight:500;color:var(--frame-color);text-decoration:none}
-  .hook{font-size:13.5px !important;font-weight:400 !important;color:#8A90A0 !important;gap:8px !important}
+  .hook{font-size:15px !important;font-weight:500 !important;color:var(--frame-color) !important;gap:12px !important}
+  .hk-wrap{position:relative;display:inline-block;padding-bottom:10px}
+  .hk-base{position:absolute;left:0;right:0;bottom:0;height:1px;background:#D6D3EC}
+  .hk-trail{position:absolute;left:0;bottom:0;height:1px;width:0;background:#8C87C2}
+  .hk-ag{position:absolute;left:-14px;bottom:-14px;width:28px;height:28px;overflow:visible}
   .hook span{color:var(--frame-color)}
   .hook:hover{color:var(--frame-color) !important}
   @media (max-width: 760px){.hook{position:static;margin-top:32px;align-self:flex-start}}
@@ -548,8 +552,6 @@ html{scroll-behavior:smooth;scroll-padding-top:84px}
 .cv-btn{transition:background .2s,transform .2s,box-shadow .2s}
 .cv-btn:hover{transform:translateY(-1px);box-shadow:0 10px 20px -14px rgba(75,63,168,.6)}
 .cv-btn:active{transform:none}
-.hook{transition:color .2s,letter-spacing .2s}
-.hook:hover{letter-spacing:.01em}
 details p{animation:fadeDown .3s ease both}
 @keyframes fadeDown{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
 summary{transition:color .2s}
@@ -587,3 +589,16 @@ summary:hover{color:var(--frame-color)}
 a.cv-choice:hover{background:#F1F0FB;color:var(--frame-color)}
 .cv-choice.is-on{background:#F1F0FB;color:var(--frame-color)}
 @media (max-width:480px){.cv-choices{display:flex;flex-direction:column}.cv-choice{justify-content:center;min-height:44px}}
+
+/* hero link: highlight the section it jumps to */
+.problem-line{border-radius:12px}
+.problem-line.flash{animation:probFlash 2.4s ease both}
+.problem-line.flash p.enter{animation:probPulse 2.4s ease both}
+@keyframes probFlash{
+  0%{background:rgba(124,112,255,0);box-shadow:inset 3px 0 0 rgba(124,112,255,0)}
+  12%{background:rgba(124,112,255,.14);box-shadow:inset 3px 0 0 #7C70FF}
+  65%{background:rgba(124,112,255,.14);box-shadow:inset 3px 0 0 #7C70FF}
+  100%{background:rgba(124,112,255,0);box-shadow:inset 3px 0 0 rgba(124,112,255,0)}
+}
+@keyframes probPulse{0%,100%{letter-spacing:0}20%,60%{letter-spacing:.02em}}
+@media (prefers-reduced-motion: reduce){.problem-line.flash{animation:none;background:rgba(124,112,255,.12)}.problem-line.flash p.enter{animation:none}}

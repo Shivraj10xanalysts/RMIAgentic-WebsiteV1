@@ -2,6 +2,7 @@ import Reveal from '@/components/Reveal';
 import ProductSections, { FaqSection } from '@/components/ProductSections';
 import HowItWorks from '@/components/HowItWorks';
 import WhySection from '@/components/WhySection';
+import HookAgent from '@/components/HookAgent';
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
             <h1 className="rise d1">Have peace of mind while<br className="wide" /> your agents move money.</h1>
             <div className="rule rise d2" aria-hidden="true" />
             <p className="sub rise d3">Insurance that protects you and your customers<br className="wide" /> every time your AI agent pays.</p>
-            <a className="hook" href="#problem">So what happens when an agent gets it wrong?</a>
+            <HookAgent />
           </div>
         </div>
       </div>
