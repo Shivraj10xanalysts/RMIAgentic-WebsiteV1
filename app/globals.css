@@ -568,3 +568,6 @@ summary:hover{color:var(--frame-color)}
 
 /* product heading: smaller than the problem line */
 .sec h2.h-sub{font-size:clamp(18px,1.55vw,23px)}
+
+/* Rate and Monitor headings: same smaller size as the Product heading */
+.fx h3{font-size:clamp(18px,1.55vw,23px)}

@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Reveal from './Reveal';
 import RateDemo from './RateDemo';
 import MonitorDemo from './MonitorDemo';
@@ -86,7 +85,7 @@ export function FaqSection() {
         <Reveal className="qs" delay={0.1}>
           <p className="faq-group">Coverage</p>
           <Q q="What kinds of agent mistakes are covered?">Covered errors include buying the wrong item, paying the wrong amount, duplicate payments, and purchases triggered by prompt injection. <strong>Deliberate misuse and losses outside your agent’s actions aren’t covered.</strong> Full details are in your policy.</Q>
-          <Q q="What happens when our agent makes a mistake?">Your customers are reimbursed for covered agent errors, helping limit your liability. <Link href="/contact" style={{ color: 'var(--frame-color)' }}>Contact the RMI Agentic team</Link> to discuss the details.</Q>
+          <Q q="What happens when our agent makes a mistake?">Your customers are reimbursed for covered agent errors, helping limit your liability. Contact the RMI Agentic team to discuss the details.</Q>
           <p className="faq-group">Testing and your Trust Score</p>
           <Q q="How is this different from red‑teaming or the testing we already do?">Testing tells you what broke. We turn the results into a Trust Score, a premium and insurance cover, built for agents that move money.</Q>
           <Q q="How is the Trust Score calculated?">We run thousands of adversarial test cases, covering risks like prompt injection, wrong orders and excessive agency. Each failure is weighted by its severity and the amount of money at stake. The full methodology is summarized in your Trust Score report.</Q>
