@@ -94,7 +94,7 @@ export function FaqSection() {
           <p className="faq-group">Safety and integration</p>
           <Q q="Do you ever touch real money or live payments?">No. Testing runs in your sandbox, with test credentials and simulated merchants. In production, we observe your agent’s actions but never initiate payments.</Q>
           <Q q="Does monitoring slow down our agent’s payments?">No. We analyze your agent’s traces alongside it, not in its payment path, so payments run at full speed.</Q>
-          <Q q="Which frameworks and payment rails do you support?">Any framework that emits standard traces, such as LangGraph, the OpenAI Agents SDK or CrewAI. For payments, we support <strong>[Stripe, card networks’ agent programs and others]</strong>. Using something else? Talk to us. We can usually still work with you.</Q>
+          <Q q="Which frameworks do you support?">Any framework that emits standard traces, such as LangGraph, the OpenAI Agents SDK or CrewAI. Using something else? Talk to us. We can usually still work with you.</Q>
           <p className="faq-group">Getting started</p>
           <Q q="Our agent isn’t live yet. Can we start early?">Yes, and it’s the best time to. Weak spots are cheapest to fix before launch, and a higher score at launch means a lower premium from day one.</Q>
         </Reveal>
