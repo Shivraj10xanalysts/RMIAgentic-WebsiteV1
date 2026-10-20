@@ -40,13 +40,11 @@ export default function Header() {
       <Link href="/" aria-label="RMI Agentic, home" style={{ textDecoration: 'none', display: 'inline-flex', alignSelf: 'flex-start' }} onClick={onLogo}><Logo /></Link>
       <nav className="menu" aria-label="Main">
         <Link href="/#product" className={section === 'product' ? 'is-active' : ''}><i aria-hidden="true" />Product</Link>
-        <Link href="/cover-cost" className={path === '/cover-cost' ? 'is-active' : ''}><i aria-hidden="true" />Cover cost</Link>
         <Link className="contact-link" href="/contact">Contact us</Link>
         <details className="mm" ref={mm}>
           <summary className="menu-toggle"><span className="mt-lines" aria-hidden="true"><i /><i /></span>Menu</summary>
           <nav className="mobile-menu" aria-label="Mobile" onClick={closeMenu}>
             <Link href="/#product">Product</Link>
-            <Link href="/cover-cost">Cover cost</Link>
             <Link href="/contact" style={{ color: 'var(--frame-color)' }}>Contact us</Link>
           </nav>
         </details>

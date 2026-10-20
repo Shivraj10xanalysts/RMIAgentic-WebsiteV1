@@ -1,9 +1,6 @@
-export const metadata = { title: 'Cover cost — RMI Agentic' };
+import { notFound } from 'next/navigation';
 
+// Cover cost page is hidden for now. To bring it back, restore the previous version of this file.
 export default function CoverCost() {
-  return (
-    <section className="contact-view cover-view" id="cover-cost" aria-labelledby="cover-title">
-      <div className="cv-wrap"><h1 className="cv-title" id="cover-title">Ready to insure your agent?</h1></div>
-    </section>
-  );
+  notFound();
 }
