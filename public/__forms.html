@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Forms</title></head>
+<body>
+  <!-- Static copy of the contact form so Netlify can detect it at deploy time. -->
+  <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="contact">
+    <input name="bot-field">
+    <input name="name">
+    <input name="email" type="email">
+    <input name="company">
+    <input name="role">
+    <textarea name="message"></textarea>
+  </form>
+</body>
+</html>
