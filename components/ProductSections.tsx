@@ -49,7 +49,7 @@ export default function ProductSections() {
         <Reveal>
           <p className="tag"><i aria-hidden="true" />Rate</p>
           <h3>We test and rate your agent. You pay less.</h3>
-          <div className="ben"><b>Know the risks before launch.</b><span>Adversarial testing finds exactly where your agent is weak.</span></div>
+          <div className="ben"><b>Know the risks before launch.</b><span>Adversarial testing finds exactly where your agent is weak across 24 categories.</span></div>
           <div className="ben"><b>Lower your premium.</b><span>Fix weak spots, raise your Trust Score, pay less.</span></div>
         </Reveal>
         <Reveal className="bp-col" delay={0.1}>

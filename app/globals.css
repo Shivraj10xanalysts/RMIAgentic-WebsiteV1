@@ -565,3 +565,6 @@ summary:hover{color:var(--frame-color)}
 .ov-cards > .reveal{display:flex}
 .ov-cards > .reveal > .ov-card{flex:1}
 .sf-brand .brand{gap:10px}
+
+/* product heading: smaller than the problem line */
+.sec h2.h-sub{font-size:clamp(18px,1.55vw,23px)}
