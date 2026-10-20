@@ -48,7 +48,6 @@ export default function ContactForm() {
       <button className="cv-btn" type="submit" disabled={status === 'sending' || status === 'sent'}>{status === 'sending' ? 'Sending…' : 'Send message'}</button>
       {status === 'sent' && <p className="cv-ok" role="status">Thanks. We’ll be in touch soon.</p>}
       {status === 'error' && <p className="cv-ok" role="alert" style={{ color: '#C8402E' }}>Something went wrong. Please try again, or email us at tank@rmiagentic.com.</p>}
-      <p className="cv-legal">By sending, you agree to our <a href="#">[Terms]</a> and <a href="#">[Privacy Policy]</a>.</p>
     </form>
   );
 }
