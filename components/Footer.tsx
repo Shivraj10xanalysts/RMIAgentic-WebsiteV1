@@ -10,7 +10,7 @@ export default function Footer() {
         <nav aria-label="Company"><h3>Company</h3><Link href="/contact">Contact</Link></nav>
         <nav aria-label="Resources"><h3>Resources</h3><Link href="/#faq">FAQs</Link></nav>
       </div>
-      <p className="sf-legal">© 2026 RMI Agentic · [Terms] · [Privacy]</p>
+      <p className="sf-legal">© 2026 RMI Agentic · <a href="https://www.linkedin.com/company/rmiagentic" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
     </footer>
   );
 }
